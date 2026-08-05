@@ -1,0 +1,20 @@
+[project]
+name = "mental-health-score-main"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.141.1",
+    "joblib>=1.5.3",
+    "pandas>=3.0.5",
+    "pydantic>=2.13.4",
+    "scikit-learn>=1.9.0",
+    "uvicorn>=0.52.1",
+]
+
+[project.scripts]
+mental-health-score-main = "mental_health_score_main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
